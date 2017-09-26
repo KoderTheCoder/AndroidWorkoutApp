@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Exercise Name"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Repititons"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Time(seconds)"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="match_parent"

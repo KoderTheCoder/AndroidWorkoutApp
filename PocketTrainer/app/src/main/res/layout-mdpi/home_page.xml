@@ -18,8 +18,8 @@
         android:layout_marginBottom="10dp"
         />
     <Button
-        android:layout_width="170dp"
-        android:layout_height="85dp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
         android:text="CREATE WORKOUT"
         android:id="@+id/createWorkout"
         android:layout_marginBottom="30dp"
@@ -27,8 +27,8 @@
         android:textColor="#ffffff"
         />
     <Button
-        android:layout_width="170dp"
-        android:layout_height="85dp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
         android:text="CHOOSE WORKOUT"
         android:id="@+id/chooseWorkout"
         android:background="@drawable/homebutton"
