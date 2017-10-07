@@ -63,7 +63,7 @@
         android:layout_width="155dp"
         android:layout_height="45dp"
         android:text="FINISH"
-        android:id="@+id/finishWorkoutCreateButtonButton"
+        android:id="@+id/finishWorkoutCreateButton"
         android:layout_marginTop="10dp"
         android:background="@drawable/homebutton"
         android:textColor="#ffffff"

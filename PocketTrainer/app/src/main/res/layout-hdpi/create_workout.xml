@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:hint="Workout Name"
         android:textColorHint="#898989"
+        android:textColor="#ffffff"
         android:id="@+id/workoutName"
         />
     <Button

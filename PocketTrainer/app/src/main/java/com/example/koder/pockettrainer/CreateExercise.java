@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,6 +32,7 @@ public class CreateExercise extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_exercise);
+        final Database db = new Database(this);
 
         nextButton2 = (Button)findViewById(R.id.createExerciseNextButton);
         finishButton = (Button)findViewById(R.id.finishWorkoutCreateButton);
@@ -43,11 +45,6 @@ public class CreateExercise extends AppCompatActivity {
         exerciseCount = getIntent().getIntExtra("count", exerciseCount);
         exerciseNumber = (TextView)findViewById(R.id.createExerciseNumber);
         exerciseNumber.setText(Integer.toString(exerciseCount));
-
-
-        for (Exercise name:exercises.exercisesArray) {
-            Toast.makeText(CreateExercise.this, name.getName(), Toast.LENGTH_SHORT).show();
-        }
 
         nextButton2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +72,16 @@ public class CreateExercise extends AppCompatActivity {
                 }else{
                     Toast.makeText(CreateExercise.this, "Error: Please Fill out all required fields.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        finishButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                db.addWorkout(workoutName, exercises);
+                Toast.makeText(CreateExercise.this, "Workout added", Toast.LENGTH_SHORT).show();
+                Intent nextScreen = new Intent(CreateExercise.this, MainActivity.class);
+                startActivityForResult(nextScreen, 1);
+                finish();
             }
         });
     }

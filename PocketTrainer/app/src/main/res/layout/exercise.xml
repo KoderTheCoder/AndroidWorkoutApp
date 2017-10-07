@@ -38,7 +38,7 @@
         android:textColor="#d74040"
         android:layout_gravity="center_horizontal"
         android:textSize="50sp"
-        android:id="@+id/exerciseRepitition"
+        android:id="@+id/exerciseAmount"
         />
 
     <TextView
@@ -47,6 +47,7 @@
         android:text="Repitions"
         android:textColor="#ffffff"
         android:layout_gravity="center_horizontal"
+        android:id="@+id/unit"
         android:textSize="30sp"
         />
     <Button

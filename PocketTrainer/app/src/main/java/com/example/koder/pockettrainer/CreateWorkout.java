@@ -30,6 +30,7 @@ public class CreateWorkout extends AppCompatActivity{
         nextButton = (Button)findViewById(R.id.createWorkoutNext);
         workoutName = (EditText)findViewById(R.id.workoutName);
         exercises = new Exercises();
+        exercises.addExercise("first", 0, 0);
         exerciseCount = 1;
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override

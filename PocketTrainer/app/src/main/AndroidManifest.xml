@@ -20,6 +20,8 @@
         <activity android:name=".CreateWorkout"></activity>
         <activity android:name=".ChooseWorkout"></activity>
         <activity android:name=".CreateExercise"></activity>
+        <activity android:name=".Workout"></activity>
+        <activity android:name=".FinishedWorkout"></activity>
 
     </application>
 
